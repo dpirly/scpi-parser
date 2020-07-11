@@ -352,7 +352,7 @@ extern "C" {
         const char * pattern;
         scpi_command_callback_t callback;
 #if USE_COMMAND_TAGS
-        int32_t tag;
+        uint64_t tag;
 #endif /* USE_COMMAND_TAGS */
     };
 

@@ -1506,7 +1506,7 @@ scpi_bool_t SCPI_IsCmd(scpi_t * context, const char * cmd) {
  * @param context
  * @return
  */
-int32_t SCPI_CmdTag(scpi_t * context) {
+uint64_t SCPI_CmdTag(scpi_t * context) {
     if (context->param_list.cmd) {
         return context->param_list.cmd->tag;
     } else {
